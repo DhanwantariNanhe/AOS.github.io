@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate on Scroll</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        body[data-aos-duration='4000'] [data-aos],
+        [data-aos][data-aos][data-aos-duration='4000'] {
+            transition-duration: 4000ms;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .child {
+
+            border: 1px solid black;
+            height: 50vh;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 10px 10px 15px black;
+            margin-top: 8rem;
+        }
+
+        .child p {
+
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="child">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ex aliquid minima eveniet veniam minus
+                omnis nesciunt quibusdam nostrum, quia iusto odio recusandae veritatis, porro perferendis iste possimus
+                fugiat temporibus!</p>
+
+        </div>
+        <div class="child" data-aos="flip-up">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ex aliquid minima eveniet veniam minus
+                omnis nesciunt quibusdam nostrum, quia iusto odio recusandae veritatis, porro perferendis iste possimus
+                fugiat temporibus!</p>
+
+        </div>
+        <div class="child" data-aos="fade-in">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ex aliquid minima eveniet veniam minus
+                omnis nesciunt quibusdam nostrum, quia iusto odio recusandae veritatis, porro perferendis iste possimus
+                fugiat temporibus!</p>
+
+        </div>
+
+        <div class="child">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ex aliquid minima eveniet veniam minus
+                omnis nesciunt quibusdam nostrum, quia iusto odio recusandae veritatis, porro perferendis iste possimus
+                fugiat temporibus!</p>
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+
+            duration: 3000,
+            offset: 350
+        });
+    </script>
+</body>
+
+</html>
